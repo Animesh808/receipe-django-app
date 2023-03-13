@@ -1,0 +1,8 @@
+# For linting
+docker-compose run --rm app sh -c 'flake8'
+
+# For running test
+docker-compose run --rm app sh -c "python manage.py test"
+
+# Creating a new django project
+docker-compose run app sh -c "django-admin startproject app ."
